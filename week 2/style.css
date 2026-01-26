@@ -2,33 +2,23 @@
      
      Background Colors
       ------------------ */
-     h1 {background-color: rgb(255, 255, 255);}
       body {background-color: rgb(0, 0, 0);}
-      h3 {background-color: rgb(142, 24, 215);}
-      footer {background-color: rgba(0, 0, 255, 0.532);}
-      p {background-color: purple;}
-      nav {background-color: rgb(205, 24, 215)}
+
+
+      
       font types
       ------------------ */
-     h1 {  font-family: "Special Elite", system-ui;}
+      h1 {font-family: "Special Elite", system-ui;}
       h2 {font-family: "Special Elite", system-ui;}
-      h3 .special-elite-regular {
-  font-family: "Special Elite", system-ui;
-  font-weight: 400;
-  font-style: normal;
-}
+      h3 {font-family: "Annie Use Your Telescope", cursive;}
       footer {font-family: Arial, sans-serif;}
-      p {font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
-      nav .rock-3d-regular {
-  font-family: "Rock 3D", system-ui;
-  font-weight: 400;
-  font-style: normal;
-}
-
+      p {font-family: "Nanum Pen Script", cursive;}
+      nav {font-family: "Rock 3D", system-ui;}
+ 
 
       font colours
         ------------------ */
-        h1 {color: black;}
+        h1 {color: rgb(255, 255, 255);}
         h2 {color: white;}
         h3 {color: white;}
         footer {color: black;}
@@ -37,7 +27,7 @@
 
         font sizes
         ------------------ */
-        h1 {font-size: 36px;}
+        h1 {font-size: 100px;}
         h2 {font-size: 30px;}
         h3 {font-size: 24px;}
         footer {font-size: 14px;}
