@@ -12,11 +12,20 @@
       font types
       ------------------ */
      h1 {font-family: 'Courier New', Courier, monospace, sans-serif;}
-      h2 {font-family: a, sans-serif;}
-      h3 {font-family: Arial, sans-serif;}
+      h2 {font-family: 'Cambria', Cochin, Georgia, Times New Roman, serif;}
+      h3 .special-elite-regular {
+  font-family: "Special Elite", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
       footer {font-family: Arial, sans-serif;}
-      p {font-family: Arial, sans-serif;}
-      nav {font-family: Arial, sans-serif;}
+      p {font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+      nav .rock-3d-regular {
+  font-family: "Rock 3D", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
 
       font colours
         ------------------ */
