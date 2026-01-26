@@ -1,0 +1,37 @@
+     
+     
+     Background Colors
+      ------------------ */
+     h1 {background-color: rgb(255, 255, 255);}
+      h2 {background-color: rgb(0, 0, 0);}
+      h3 {background-color: rgb(142, 24, 215);}
+      footer {background-color: rgba(0, 0, 255, 0.532);}
+      p {background-color: purple;}
+      nav {background-color: rgb(205, 24, 215);}
+
+      font types
+      ------------------ */
+     h1 {font-family: 'Courier New', Courier, monospace, sans-serif;}
+      h2 {font-family: a, sans-serif;}
+      h3 {font-family: Arial, sans-serif;}
+      footer {font-family: Arial, sans-serif;}
+      p {font-family: Arial, sans-serif;}
+      nav {font-family: Arial, sans-serif;}
+
+      font colours
+        ------------------ */
+        h1 {color: black;}
+        h2 {color: white;}
+        h3 {color: white;}
+        footer {color: black;}
+        p {color: white;}
+        nav {color: white;}
+
+        font sizes
+        ------------------ */
+        h1 {font-size: 36px;}
+        h2 {font-size: 30px;}
+        h3 {font-size: 24px;}
+        footer {font-size: 14px;}
+        p {font-size: 16px;}
+        nav {font-size: 18px;}
