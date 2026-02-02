@@ -1,4 +1,4 @@
-# home page
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -11,15 +11,65 @@
 <link rel="stylesheet" href="style.css">
 </head>
 
+
 <body>
-    <h1>Welcome to My Portfolio</h1>
+
+    <!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h2, p {
+  margin: 10px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #333333;
+  display: flex;
+}
+
+ul li a {
+  display: block;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  background-color: #111111;
+}
+</style>
+</head>
+<body>
+<navbar class="navbar">
+<ul>
+  <li><a href="#welcome">Home</a></li>
+  <li><a href="about.html">About</a></li>
+  <li><a href="#projects">Projects</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li class="initials">AC</li>
+</navbar>
+
+</ul>
+
+
+
+</body>
+</html>
+
+    <h1 id="welcome">Welcome to My Portfolio</h1>
+
+    
     <h2>This is the home page of my portfolio website. Here you can find links to my projects, CV, and contact information.</h2>
-    <nav>
-        <ul>
-            <li><button onclick="window.location.href='projects.html'">Projects</button></li>
-            <li><button onclick="window.location.href='resume.html'">CV</button></li>                           
-            <li><button onclick="window.location.href='contact.html'">Contact info</button></li>
-        </ul>
-    </nav>
+    
+
+
 </body>
 
