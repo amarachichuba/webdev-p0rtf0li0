@@ -186,3 +186,14 @@ label {
   background: #4ec5c1;
 }
 
+[data-type]::after {
+  content: "|";
+  margin-left: 6px;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 50%, 100% { opacity: 1; }
+  25%, 75% { opacity: 0; }
+}
+
