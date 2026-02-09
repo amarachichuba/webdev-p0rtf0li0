@@ -14,7 +14,7 @@
 body.home {background-color: rgb(59, 47, 47);}
 body.about {background-color: rgb(233, 75, 60);}
 body.project {background-color: rgb(78, 197, 193);}
-body.contacts {background-color: rgb(84, 194, 88);}
+body.contacts {background-color: rgb(86, 194, 90);}
 
 
 
@@ -60,4 +60,64 @@ label {
   font-family: 'Annie Use Your Telescope', cursive;
   color: rgb(255, 255, 255);
   font-size: 20px;
+}
+.home-layout {
+    display: flex;
+    align-items: center; /* vertically aligns image + text */
+    gap: 20px; /* space between them */
+    margin: 20px;
+}
+
+.home-image {
+    flex: 1; /* image takes up some space */
+}
+
+.home-text {
+    flex: 1; /* text takes up equal space */
+}
+.contact-layout {
+    display: flex;
+    gap: 40px;
+    margin: 40px;
+    align-items: flex-start;
+}
+
+.contact-left, .contact-right {
+    flex: 1;
+}
+
+.contact-left img {
+    max-width: 100%;
+    margin-top: 20px;
+}
+
+.contact-right {
+    background: #56c25a;
+    padding: 10px;
+    border-radius: 10px;
+}
+.contact-layout {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    margin: 40px;
+}
+
+.contact-left, .contact-right {
+    flex: 1;
+}
+
+.contact-right form label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.contact-right form input,
+.contact-right form textarea {
+    width: 100%;
+    margin-top: 5px;
+    padding: 8px;
+    box-sizing: border-box;
 }
