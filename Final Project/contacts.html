@@ -61,7 +61,7 @@ ul li a:hover {
 <h1 data-type="Contact me" data-speed="60"></h1>
 
 <h2
-  data-type="Let's get in touch!"
+  data-type="Like what you see... Let's get in touch!"
   data-speed="45"
   data-delay="400">
 </h2>
@@ -71,27 +71,26 @@ ul li a:hover {
 
     <!-- LEFT SIDE -->
     <div class="contact-left">
-        <h3>Email: amarachichuba@gmail.com</h3>
-        <h3>Phone Number: +44 7455 991156</h3>
+        <h3 data-type="Email: amarachichuba@gmail.com"></h3>
+        <h3 data-type="Phone Number: +44 7455 991156"></h3>
     </div>
 
     <!-- RIGHT SIDE -->
     <div class="contact-right">
         <h2>New Message</h2>
 
-        <form>
-            <label for="recipient-name">Recipient:</label>
-            <input type="text" id="recipient-name" class="form-control">
+        <form onsubmit="sendEmail(event)">
+    <label for="recipient-name">Recipient:</label>
+    <input type="text" id="recipient-name" class="form-control" required>
 
-            <label for="message-text">Message:</label>
-            <textarea id="message-text" class="form-control"></textarea>
+    <label for="message-text">Message:</label>
+    <textarea id="message-text" class="form-control" required></textarea>
 
-            <button type="button" class="btn btn-primary" style="margin-top: 10px;">
-                Send
-            </button>
-        </form>
+    <button type="submit" class="btn btn-primary" style="margin-top: 10px;">
+        Send
+    </button>
+</form>
     </div>
-
 </div>
 <script src="effects.js"></script>
 </body>
