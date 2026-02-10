@@ -1,10 +1,15 @@
 document.addEventListener("DOMContentLoaded", () => {
   const elements = document.querySelectorAll("[data-type]");
+  let about = document.getElementById("about");
 
   elements.forEach((el) => {
     const text = el.getAttribute("data-type");
-    const speed = el.getAttribute("data-speed") || 50;
+    let speed = el.getAttribute("data-speed") || 50;
     const delay = el.getAttribute("data-delay") || 0;
+
+    if (el.id === "about") {
+        speed = el.getAttribute("data-speed") || 15;
+    }
 
     el.textContent = "";
     let index = 0;
