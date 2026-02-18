@@ -13,16 +13,8 @@
     <!-- External CSS -->
     <link rel="stylesheet" href="style.css">
 
-    <!-- Internal CSS (VALID because it's inside <head>) -->
     <style>
-        body {
-            margin: 0;
-            padding: 0;
-        }
-
-        h2, p {
-            margin: 10px;
-        }
+        body { margin: 0; padding: 0; }
 
         nav ul {
             list-style-type: none;
@@ -39,20 +31,14 @@
             text-decoration: none;
         }
 
-        nav ul li a:hover {
-            background-color: rgb(59, 47, 47);
-        }
+        nav ul li a:hover { background-color: rgb(59, 47, 47); }
 
-        .initials {
-            color: white;
-            padding: 14px 16px;
-        }
+        .initials { color: white; padding: 14px 16px; }
     </style>
 </head>
 
 <body class="contacts">
 
-    <!-- FIXED: navbar uses <nav>, not <navbar> -->
     <nav class="navbar">
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -63,41 +49,84 @@
         </ul>
     </nav>
 
-    <h1>Contact Me</h1>
+    <!-- Sequential typing: h1 → h2 → p → p → p → h1 (form) → h2 (form) → labels -->
+    <h1
+        data-type="Contact Me"
+        data-speed="60"
+        data-delay="0">
+    </h1>
 
-    <h2>
-        You can reach me through the following channels:
+    <h2
+        data-type="You can reach me through the following channels:"
+        data-speed="40"
+        data-delay="500">
     </h2>
 
-    <p>Email: your-email@example.com</p>
-    <p>LinkedIn: your-linkedin-url</p>
-    <p>GitHub: your-github-url</p>
+    <p
+        data-type="Email: your-email@example.com"
+        data-speed="30"
+        data-delay="1000">
+    </p>
+
+    <p
+        data-type="LinkedIn: your-linkedin-url"
+        data-speed="30"
+        data-delay="1500">
+    </p>
+
+    <p
+        data-type="GitHub: your-github-url"
+        data-speed="30"
+        data-delay="2000">
+    </p>
+
+    <!-- Combined layout begins -->
+    <main class="content contact-layout">
+
+        <div class="contact-left">
+            <h1
+                data-type="Contact Me"
+                data-speed="60"
+                data-delay="5000">
+            </h1>
+
+            <h2
+                data-type="Send me a message!"
+                data-speed="40"
+                data-delay="5500">
+            </h2>
+        </div>
+
+        <div class="contact-right">
+            <form>
+
+                <label for="name"
+                    data-type="Your Name"
+                    data-speed="30"
+                    data-delay="5750">
+                </label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email"
+                    data-type="Your Email"
+                    data-speed="30"
+                    data-delay="6000">
+                </label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message"
+                    data-type="New Message"
+                    data-speed="30"
+                    data-delay="6250">
+                </label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit" class="project-btn">Send</button>
+            </form>
+        </div>
+
+    </main>
 
     <script src="effects.js"></script>
 </body>
 </html>
-<main class="content contact-layout">
-
-  <div class="contact-left">
-      <h1>Contact Me</h1>
-      <h2>Send me a message!</h2>
-  </div>
-
-  <div class="contact-right">
-      <form>
-          <label for="name">Your Name</label>
-          <input type="text" id="name" name="name" required>
-
-          <label for="email">Your Email</label>
-          <input type="email" id="email" name="email" required>
-
-          <label for="message">New Message</label>
-          <textarea id="message" name="message" rows="5" required></textarea>
-
-          <button type="submit" class="project-btn">Send</button>
-      </form>
-  </div>
-
-</main>
-
-
