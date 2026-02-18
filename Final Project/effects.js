@@ -1,31 +1,24 @@
 document.addEventListener("DOMContentLoaded", () => {
   const elements = document.querySelectorAll("[data-type]");
 
-  elements.forEach((el) => {
+  elements.forEach(el => {
     const text = el.getAttribute("data-type");
-    let speed = Number(el.getAttribute("data-speed")) || 50;
-    const delay = Number(el.getAttribute("data-delay")) || 0;
-
-    // Special speed for #about
-    if (el.id === "about") {
-      speed = Number(el.getAttribute("data-speed")) || 15;
-    }
+    const speed = parseInt(el.getAttribute("data-speed")) || 50;
+    const delay = parseInt(el.getAttribute("data-delay")) || 0;
 
     el.textContent = "";
-    let index = 0;
+    let i = 0;
 
     setTimeout(() => {
-      function type() {
-        if (index < text.length) {
-          el.textContent += text.charAt(index);
-          index++;
-          setTimeout(type, speed);
-        } else {
-          // Remove blinking cursor when done
+      const typing = setInterval(() => {
+        el.textContent += text[i];
+        i++;
+
+        if (i === text.length) {
+          clearInterval(typing);
           el.classList.add("stop-cursor");
         }
-      }
-      type();
+      }, speed);
     }, delay);
   });
 });

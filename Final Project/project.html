@@ -1,93 +1,91 @@
 
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>My Portfolio</title>
-       <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Rock+3D&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
-</head>
-
-
-<body class="home">
-
-    <!DOCTYPE html>
-<html>
 <head>
-<style>
-body {
-  margin: 0;
-  padding: 0;
-}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects</title>
 
-h2, p {
-  margin: 10px;
-}
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Rock+3D&display=swap" rel="stylesheet">
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  background-color: #333333;
-  display: flex;
-}
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
 
-ul li a {
-  display: block;
-  color: white;
-  padding: 14px 16px;
-  text-decoration: none;
-}
+    <!-- Internal CSS -->
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
 
-ul li a:hover {
-  background-color: rgb(59, 47, 47);
-}
-</style>
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-color: #333333;
+            display: flex;
+        }
+
+        nav ul li a {
+            display: block;
+            color: white;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            background-color: rgb(59, 47, 47);
+        }
+
+        .initials {
+            color: white;
+            padding: 14px 16px;
+        }
+    </style>
 </head>
-<body>
-<navbar class="navbar">
-<ul>
-  <li><a href="index.html">Home</a></li>
-  <li><a href="about.html">About</a></li>
-  <li><a href="project.html">Projects</a></li>
-  <li><a href="contacts.html">Contact</a></li>
-  <li class="initials">AC</li>
-</navbar>
 
-</ul>
+<body class="project" style="background-color: rgb(78, 197, 193);">
 
+    <!-- FIXED NAVBAR -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="project.html">Projects</a></li>
+            <li><a href="contacts.html">Contact</a></li>
+            <li class="initials">AC</li>
+        </ul>
+    </nav>
+
+    <h1>My Projects</h1>
+
+    <h2>Here are some of the projects I've worked on:</h2>
+
+    <div class="projects-container">
+
+        <div class="project-card">
+            <h3>Project Nova</h3>
+            <p>This project is a console game built using Java.</p>
+            <a href="https://github.com/amarachichuba-star/projectnova.git">
+                <button class="project-btn">View Project</button>
+            </a>
+        </div>
+
+        <div class="project-card">
+            <h3>To-Do App</h3>
+            <p>This project is a command-line To-Do List Manager as a shell script utility.</p>
+            <a href="https://github.com/amarachichuba-star/Unix-To-do.git">
+                <button class="project-btn">View Project</button>
+            </a>
+        </div>
+
+    </div>
+
+    <script src="effects.js"></script>
 </body>
 </html>
-<body class="project" style="background-color: rgb(78, 197, 193);">
-<h1 data-type="My Projects" data-speed="60"></h1>
-<h2
-  data-type="Here are some of the projects I've worked on:"
-  data-speed="45"
-  data-delay="500">
-</h2>
 
-<div class="projects-container">
-  <div class="project-card">
-    <h3>Project Nova</h3>
-    <p>This project is a console game built using Java.</p>
-     <a href="https://github.com/amarachichuba-star/projectnova.git">
-  <button class="project-btn">View Project</button>
-</a>
-  </div>
-
-  <div class="project-card">
-    <h3>To-Do App</h3>
-    <p>This project is a command-line To-Do List Manager as a shell script utility.</p>
-    <a href="https://github.com/amarachichuba-star/Unix-To-do.git">
-  <button class="project-btn">View Project</button>
-</a>
-  </div>
-</div>
-<script src="effects.js"></script>
-
- </body>
- </html>
 

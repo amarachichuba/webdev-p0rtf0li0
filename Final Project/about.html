@@ -1,71 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>About Me</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Rock+3D&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Rock+3D&display=swap" rel="stylesheet">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Internal CSS (VALID because it's inside <head>) -->
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        h2, p {
+            margin: 10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-color: #333333;
+            display: flex;
+        }
+
+        nav ul li a {
+            display: block;
+            color: white;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            background-color: rgb(59, 47, 47);
+        }
+
+        .initials {
+            color: white;
+            padding: 14px 16px;
+        }
+    </style>
 </head>
+
 <body class="about">
 
-    <!DOCTYPE html>
-<html>
-<head>
-<style>
-body {
-  margin: 0;
-  padding: 0;
-}
+    <!-- FIXED: navbar uses <nav>, not <navbar> -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="project.html">Projects</a></li>
+            <li><a href="contacts.html">Contact</a></li>
+            <li class="initials">AC</li>
+        </ul>
+    </nav>
 
-h2, p {
-  margin: 10px;
-}
+    <h1>About Me</h1>
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  background-color: #333333;
-  display: flex;
-}
+    <!-- FIXED: Your text is now real content, not hidden in attributes -->
+    <h2 id="about">
+        I am a Computer Science student with a strong passion for Artificial Intelligence and the endless possibilities it brings. 
+        I’m deeply curious about how intelligent systems are shaping the future, and I’m committed to learning the foundations that make these technologies possible.
+        <br><br>
+        While AI is my main interest, I’m eager to explore every corner of computer science—from algorithms and data structures to software engineering, networking, and cybersecurity. 
+        I believe that becoming a well‑rounded technologist is essential for building meaningful and responsible AI systems.
+        <br><br>
+        I have hands‑on experience with programming and enjoy experimenting with projects that blend creativity and problem‑solving. 
+        Whether it’s building small applications, analyzing data, or learning new frameworks, I’m always excited to expand my skills.
+        <br><br>
+        My goal is to contribute to innovative projects that push the boundaries of what technology can do, while continuously growing as a learner in this fast‑evolving field.
+    </h2>
 
-ul li a {
-  display: block;
-  color: white;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-ul li a:hover {
-  background-color: rgb(59, 47, 47);
-}
-</style>
-</head>
-<body>
-<navbar class="navbar">
-<ul>
-  <li><a href="index.html">Home</a></li>
-  <li><a href="about.html">About</a></li>
-  <li><a href="project.html">Projects</a></li>
-  <li><a href="contacts.html">Contact</a></li>
-  <li class="initials">AC</li>
-</navbar>
-
-</ul>
-
-
-<script src="effects.js"></script>
-
+    <script src="effects.js"></script>
 </body>
 </html>
-    <h1 data-type="About Me"></h1>
-<h2 id="about" data-type="I am a Computer Science student with a strong passion for Artificial Intelligence and the endless possibilities it brings. I’m deeply curious about how intelligent systems are shaping the future, and I’m committed to learning the foundations that make these technologies possible.
-
-While AI is my main interest, I’m eager to explore every corner of computer science—from algorithms and data structures to software engineering, networking, and cybersecurity. I believe that becoming a well‑rounded technologist is essential for building meaningful and responsible AI systems.
-
-I have hands‑on experience with programming and enjoy experimenting with projects that blend creativity and problem‑solving. Whether it’s building small applications, analyzing data, or learning new frameworks, I’m always excited to expand my skills.
-
-My goal is to contribute to innovative projects that push the boundaries of what technology can do, while continuously growing as a learner in this fast‑evolving field.. "></h2>

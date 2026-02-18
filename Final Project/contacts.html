@@ -1,97 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Contact Me</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Rock+3D&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
-</head>
-
-
-    <!DOCTYPE html>
-<html>
 <head>
-<style>
-body {
-  margin: 0;
-  padding: 0;
-}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
 
-h2, p {
-  margin: 10px;
-}
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Rock+3D&display=swap" rel="stylesheet">
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  background-color: #333333;
-  display: flex;
-}
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
 
-ul li a {
-  display: block;
-  color: white;
-  padding: 14px 16px;
-  text-decoration: none;
-}
+    <!-- Internal CSS (VALID because it's inside <head>) -->
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
 
-ul li a:hover {
-  background-color:rgb(59, 47, 47);
-}
-</style>
+        h2, p {
+            margin: 10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-color: #333333;
+            display: flex;
+        }
+
+        nav ul li a {
+            display: block;
+            color: white;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            background-color: rgb(59, 47, 47);
+        }
+
+        .initials {
+            color: white;
+            padding: 14px 16px;
+        }
+    </style>
 </head>
-<body class = "contacts">
-<navbar class="navbar">
-<ul>
-  <li><a href="index.html">Home</a></li>
-  <li><a href="about.html">About</a></li>
-  <li><a href="project.html">Projects</a></li>
-  <li><a href="contacts.html">Contact</a></li>
-  <li class="initials">AC</li>
-</navbar>
 
-</ul>
+<body class="contacts">
 
+    <!-- FIXED: navbar uses <nav>, not <navbar> -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="project.html">Projects</a></li>
+            <li><a href="contacts.html">Contact</a></li>
+            <li class="initials">AC</li>
+        </ul>
+    </nav>
 
-</body >
-<h1 data-type="Contact me" data-speed="60"></h1>
+    <h1>Contact Me</h1>
 
-<h2
-  data-type="Like what you see... Let's get in touch!"
-  data-speed="45"
-  data-delay="400">
-</h2>
+    <h2>
+        You can reach me through the following channels:
+    </h2>
 
+    <p>Email: your-email@example.com</p>
+    <p>LinkedIn: your-linkedin-url</p>
+    <p>GitHub: your-github-url</p>
 
-<div class="contact-layout">
-
-    <!-- LEFT SIDE -->
-    <div class="contact-left">
-        <h3 data-type="Email: amarachichuba@gmail.com"></h3>
-        <h3 data-type="Phone Number: +44 7455 991156"></h3>
-    </div>
-
-    <!-- RIGHT SIDE -->
-    <div class="contact-right">
-        <h2>New Message</h2>
-
-        <form onsubmit="sendEmail(event)">
-    <label for="recipient-name">Recipient:</label>
-    <input type="text" id="recipient-name" class="form-control" required>
-
-    <label for="message-text">Message:</label>
-    <textarea id="message-text" class="form-control" required></textarea>
-
-    <button type="submit" class="btn btn-primary" style="margin-top: 10px;">
-        Send
-    </button>
-</form>
-    </div>
-</div>
-<script src="effects.js"></script>
+    <script src="effects.js"></script>
 </body>
 </html>
+<main class="content contact-layout">
+
+  <div class="contact-left">
+      <h1>Contact Me</h1>
+      <h2>Send me a message!</h2>
+  </div>
+
+  <div class="contact-right">
+      <form>
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="email">Your Email</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="message">New Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <button type="submit" class="project-btn">Send</button>
+      </form>
+  </div>
+
+</main>
+
+
