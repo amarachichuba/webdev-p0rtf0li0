@@ -1,14 +1,14 @@
 document.addEventListener("DOMContentLoaded", () => {
   const elements = document.querySelectorAll("[data-type]");
-  let about = document.getElementById("about");
 
   elements.forEach((el) => {
     const text = el.getAttribute("data-type");
-    let speed = el.getAttribute("data-speed") || 50;
-    const delay = el.getAttribute("data-delay") || 0;
+    let speed = Number(el.getAttribute("data-speed")) || 50;
+    const delay = Number(el.getAttribute("data-delay")) || 0;
 
+    // Special speed for #about
     if (el.id === "about") {
-        speed = el.getAttribute("data-speed") || 15;
+      speed = Number(el.getAttribute("data-speed")) || 15;
     }
 
     el.textContent = "";
@@ -20,6 +20,9 @@ document.addEventListener("DOMContentLoaded", () => {
           el.textContent += text.charAt(index);
           index++;
           setTimeout(type, speed);
+        } else {
+          // Remove blinking cursor when done
+          el.classList.add("stop-cursor");
         }
       }
       type();
@@ -27,21 +30,19 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-
 function sendEmail(event) {
-    event.preventDefault();
+  event.preventDefault();
 
-    const recipient = document.getElementById("recipient-name").value.trim();
-    const message = document.getElementById("message-text").value.trim();
+  const recipient = document.getElementById("recipient-name").value.trim();
+  const message = document.getElementById("message-text").value.trim();
 
-    if (!recipient || !message) {
-        alert("Please fill out all fields.");
-        return;
-    }
+  if (!recipient || !message) {
+    alert("Please fill out all fields.");
+    return;
+  }
 
-    const subject = encodeURIComponent("New Message from Portfolio");
-    const body = encodeURIComponent(message);
+  const subject = encodeURIComponent("New Message from Portfolio");
+  const body = encodeURIComponent(message);
 
-    window.location.href = `mailto:${recipient}?subject=${subject}&body=${body}`;
+  window.location.href = `mailto:${recipient}?subject=${subject}&body=${body}`;
 }
-
