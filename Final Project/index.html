@@ -1,6 +1,5 @@
 
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -12,19 +11,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Rock+3D&display=swap" rel="stylesheet">
 
-    <!-- External CSS -->
     <link rel="stylesheet" href="style.css">
 
-    <!-- Internal CSS (VALID because it's inside <head>) -->
     <style>
-        body {
-            margin: 0;
-            padding: 0;
-        }
-
-        h2, p {
-            margin: 10px;
-        }
+        body { margin: 0; padding: 0; }
 
         nav ul {
             list-style-type: none;
@@ -41,20 +31,14 @@
             text-decoration: none;
         }
 
-        nav ul li a:hover {
-            background-color: rgb(59, 47, 47);
-        }
+        nav ul li a:hover { background-color: rgb(59, 47, 47); }
 
-        .initials {
-            color: white;
-            padding: 14px 16px;
-        }
+        .initials { color: white; padding: 14px 16px; }
     </style>
 </head>
 
 <body class="home">
 
-    <!-- FIXED: navbar uses <nav>, not <navbar> -->
     <nav class="navbar">
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -65,7 +49,12 @@
         </ul>
     </nav>
 
-    <h1>Welcome to My Portfolio</h1>
+    <!-- Sequential typing: h1 → h2 → "via Imgflip" -->
+    <h1
+        data-type="Welcome to My Portfolio"
+        data-speed="60"
+        data-delay="0">
+    </h1>
 
     <div class="home-layout">
 
@@ -74,14 +63,20 @@
                 <div style="height:0;padding-bottom:89.72%;position:relative;">
                     <iframe width="360" height="362" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameBorder="0" src="https://imgflip.com/embed/9rfpor"></iframe>
                 </div>
-                <p><a href="https://imgflip.com/gif/9rfpor">via Imgflip</a></p>
+
+                <p
+                    data-type="via Imgflip"
+                    data-speed="30"
+                    data-delay="2500">
+                </p>
             </div>
         </div>
 
         <div class="home-text">
-            <h2>
-                Heyy! I’m a computer science student who loves building things with code.  
-                Here you can find links to my projects and contact information.
+            <h2
+                data-type="Heyy! I’m a computer science student who loves building things with code."
+                data-speed="40"
+                data-delay="4500">
             </h2>
         </div>
 
